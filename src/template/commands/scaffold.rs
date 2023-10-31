@@ -43,8 +43,8 @@ fn create_file(path: &str) -> Result<File, std::io::Error> {
 pub fn scaffold_handler(day: u8) {
     let day_padded = format!("{:02}", day);
 
-    let input_path = format!("data/inputs/{}.txt", day_padded);
-    let example_path = format!("data/examples/{}.txt", day_padded);
+    let input_path = format!("data/inputs/{}.in", day_padded);
+    let example_path = format!("data/examples/{}.in", day_padded);
     let module_path = format!("src/bin/{}.rs", day_padded);
 
     let mut file = match safe_create_file(&module_path) {

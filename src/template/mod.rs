@@ -15,7 +15,7 @@ pub fn read_file(folder: &str, day: u8) -> String {
     let filepath = cwd
         .join("data")
         .join(folder)
-        .join(format!("{:02}.txt", day));
+        .join(format!("{:02}.in", day));
     let f = fs::read_to_string(filepath);
     f.expect("could not open input file")
 }
