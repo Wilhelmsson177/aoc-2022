@@ -9,7 +9,7 @@ enum Move {
 enum Outcome {
     Win,
     Lose,
-    Draw
+    Draw,
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -80,45 +80,44 @@ impl From<Round2> for Score2 {
         let s = match value {
             Round2 {
                 theirs: Move::Paper,
-                outcome: Outcome::Draw
+                outcome: Outcome::Draw,
             } => 5,
             Round2 {
                 theirs: Move::Paper,
-                outcome: Outcome::Win
+                outcome: Outcome::Win,
             } => 1,
             Round2 {
                 theirs: Move::Paper,
-                outcome: Outcome::Lose
+                outcome: Outcome::Lose,
             } => 1,
             Round2 {
                 theirs: Move::Rock,
-                outcome: Outcome::Win
+                outcome: Outcome::Win,
             } => 8,
             Round2 {
                 theirs: Move::Rock,
-                outcome: Outcome::Draw
+                outcome: Outcome::Draw,
             } => 4,
             Round2 {
                 theirs: Move::Rock,
-                outcome: Outcome::Lose
+                outcome: Outcome::Lose,
             } => 3,
             Round2 {
                 theirs: Move::Scissors,
-                outcome: Outcome::Draw
+                outcome: Outcome::Draw,
             } => 6,
             Round2 {
                 theirs: Move::Scissors,
-                outcome: Outcome::Win
+                outcome: Outcome::Win,
             } => 7,
             Round2 {
                 theirs: Move::Scissors,
-                outcome: Outcome::Lose
+                outcome: Outcome::Lose,
             } => 2,
         };
         Score2 { score: s }
     }
 }
-
 
 impl TryFrom<char> for Move {
     type Error = String;
