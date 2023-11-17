@@ -1,4 +1,4 @@
-<img src="./.assets/christmas_ferris.png" width="164">
+rgo fmt<img src="./.assets/christmas_ferris.png" width="164">
 
 # 🎄 Advent of Code 2022
 
@@ -6,6 +6,15 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 
 <!--- advent_readme_stars table --->
 
+<!--- benchmarking table --->
+## Benchmarks
+
+| Day | Part 1 | Part 2 |
+| :---: | :---: | :---:  |
+| [Day 1](./src/bin/01.rs) | `23.2µs` | `23.3µs` |
+| [Day 2](./src/bin/02.rs) | `40.2µs` | `38.9µs` |
+
+**Total: 0.13ms**
 <!--- benchmarking table --->
 
 ---

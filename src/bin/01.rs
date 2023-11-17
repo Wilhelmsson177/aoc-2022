@@ -26,7 +26,6 @@ pub fn part_two(input: &str) -> Option<u32> {
             sum
         })
         .collect::<Vec<u32>>();
-    print!("{calories:?}");
     calories.sort();
     calories.reverse();
     Some(calories[..3].iter().sum())
